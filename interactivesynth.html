@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Learning Synth</title>
+<link rel="stylesheet" type="text/css" href="css/interactivesynth.css">
+<!-- Include jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="js/simple-slider.js"></script>
+<link rel="stylesheet" type="text/css" href="css/simple-slider-volume.css">
+<link rel="stylesheet" type="text/css" href="css/simple-slider.css">
+
+  </head>
+<body>
+
+<div class = "scroll">
+  <div class = 'synth'>
+<table border = "0" >
+<tr>
+
+	<th colspan="4">	<h1> Simple Oscillator </h1>
+		</tr> <tr>
+        
+		<th colspan="4">	<img src = "images/PlayOscillator_Unpressed-01.png" id = "playButton" alt = "play" onclick = "playOscillator(this)" > </th> </tr>
+          </tr> <tr> 
+          
+            <td> <img src = "images/SineWave_Pressed-01.png" id ='sine' align = "left" onclick = "setPicture(this),
+            setWaveType('sine');" /> </td>
+            
+            <td> <img src = "images/TriangleWave_Unpressed-01.png" id = "triangle" align="left" onclick =
+                    "setPicture(this), setWaveType('triangle');" /> </td>
+          
+          <td>  <img src = "images/SquareWave_Unpressed-01.png" id="square" align="left" onclick = "setPicture(this),
+          setWaveType('square');" /> </td>
+
+          <td> <img src = "images/SawTooth_Unpressed.png" id ='sawtooth' align = "left" onclick = "setPicture(this),
+          setWaveType('sawtooth');" /> </td>
+           </tr> 
+        
+        <tr>    
+          <td colspan = "3" class = 'sliders'> <p class = 'ui-label'> Frequency </p> <input type = "text" data-slider = 'true' data-slider-theme = 'volume' data-slider-range = '0, 8000' value = '440' id = "frequency" align="left"/>  </td>
+              <td class = 'sliders'> <p> <span class = "slider-numbers" id = 'frequency-value'> 440 </span> </p>
+
+          <script> 
+            $("#frequency")
+            .bind("slider:ready slider:changed", function (event, data) {
+            $('#frequency-value').html(data.value.toFixed(0));
+            setFrequency(data.value);
+            }); </script>
+        </tr>
+
+        <tr>    
+          <td colspan = "3" class = 'sliders'> <p class = 'ui-label'> Amplitude </p> <input type = "text" data-slider = 'true' data-slider-theme = 'volume' data-slider-range = '0, 1' value = '0.0' id = "gain" align="left"/>  </td>
+              <td class = 'sliders'> <p> <span class = "slider-numbers" id = 'gain-value'> 0.0 </span> </p>
+
+          <script> 
+            $("#gain")
+            .bind("slider:ready slider:changed", function (event, data) {
+            $('#gain-value').html(data.value.toFixed(2));
+            setGain(data.value);
+            }); </script>
+        </tr> 
+
+
+        <!--    </tr> 
+           <tr> 
+           
+        <td colspan = "2"> <p> Frequency </p> <input type = "range" id = "frequency-slider" min = "0" max = "8000" steps "8000" value = "0" onchange = "updateSlider(this.value), setFrequency(this.value);" align="left"/>  </td>
+      <td> <p> <span id = "frequency-value"> 0 </span> </p>
+        </tr>  -->
+      </table>
+             <div id="oscilloscope" ></div>
+             <footer id = 'credit-footer'r> Oscilloscope used: <a href = 'stuartmemo.com/wavy-jones' color= '#9AAFB9'> wavy-jones </a> </br>
+             Only works in Chrome and Safari </footer>
+             </br>
+           </div>
+          </br>
+           </div>
+
+
+      
+      <script src="js/raphael-min.js"></script>
+       <script src="js/wavy-jones.js"></script>
+      <script src="js/interactivesynth.js"></script>
+     
+		
+</body>
+
+</html>

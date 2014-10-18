@@ -1,0 +1,73 @@
+.synth {
+	/*background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #eeeeee 0%,#cccccc 100%); /* IE10+ */
+background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */*/
+background: rgb(89,106,114); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(89,106,114,1) 0%, rgba(206,220,231,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(89,106,114,1)), color-stop(100%,rgba(206,220,231,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, rgba(89,106,114,1) 0%,rgba(206,220,231,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, rgba(89,106,114,1) 0%,rgba(206,220,231,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, rgba(89,106,114,1) 0%,rgba(206,220,231,1) 100%); /* IE10+ */
+background: linear-gradient(to bottom, rgba(89,106,114,1) 0%,rgba(206,220,231,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#596a72', endColorstr='#cedce7',GradientType=0 ); /* IE6-9 */
+}
+table {
+	
+	margin: auto;
+	padding: 10px;
+	font-size:14px;
+	text-align:center;
+	font-family:Arial, Helvetica, sans-serif;
+	
+	
+}
+table h1 {
+	font-family: 'Cooper', 'Cooper Black', 'Cooper Std', 'ballterminals';
+    margin: 0.2em 0;
+max-width: 900px;
+font-size: 50px;
+color: #9AAFB9;
+text-align: center;
+
+    text-shadow: hsl(200,44%,20%) -1px 1px, hsl(200,44%,20%) -2px 2px, hsl(200,44%,20%) -3px 3px, hsl(200,44%,20%) -4px 4px, hsl(200,44%,20%) -5px 5px, hsl(200,44%,20%) -6px 6px, hsl(200,44%,20%) -7px 7px, hsl(200,44%,20%) -8px 8px, hsl(200,44%,20%) -9px 9px, hsl(200,44%,20%) -10px 10px, hsl(200,44%,20%) -11px 11px, hsl(200,44%,20%) -12px 12px, hsl(200,44%,20%) -13px 13px;
+}
+
+table td {
+	padding: 15px 15px 15px 15px;
+}
+
+.sliders{
+	padding: 0;
+}
+
+.slider-numbers {
+	font-family: 	'Cooper', 'Cooper Black', 'Cooper Std', 'ballterminals';
+	color: #0D3D54;
+}
+
+#oscilloscope {
+	margin: auto;
+	width: 400px;
+	height: 200px;
+	border-width: .1em; 
+	border-style: none;
+	border-color: #1B4355; 
+}
+#credit-footer {
+	color: #9AAFB9
+}
+
+#credit-footer a {
+	color: #326178
+}
+
+.ui-label {
+	font-family: 'Cooper', 'Cooper Black', 'Cooper Std', 'ballterminals';
+	color: #0D3D54;
+	/*text-shadow: #353535 -1px 1px;*/
+	font-size: 20px; 
+}
